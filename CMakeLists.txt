@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( cube_cv )
+find_package( OpenCV REQUIRED )
+add_executable(cube_cv main.cpp Timer.cpp Timer.h SolverConnection.cpp SolverConnection.h PracticalSocket.cpp PracticalSocket.h image_aquisition.cpp image_acquisition.h webcam_config.cpp webcam_config.h cube.cpp cube.h mbed.cpp mbed.h serial.cpp serial.h)
+target_link_libraries(cube_cv ${OpenCV_LIBS})
+set(CMAKE_BUILD_TYPE Debug)

@@ -1,0 +1,2 @@
+main.o: main.cpp mbed.h
+mbed.o: mbed.cpp
